@@ -85,16 +85,6 @@ PatientLevelPrediction::viewMultiplePlp("outputFolder")
 
 
 ```
-- For validation of cause prediction model, please run causeValidation function after running createValidationTable function.
-  
-```r
-
-TAR <- c(30,60,90,180,365)
-lapply(TAR, function(x) createValidationTable(outputFolder, TAR = x))
-lapply(TAR, function(y) causeValidation(outputFolder, TAR = y))
-
-```
-
 
 # Development status
 Under development. Do not use
