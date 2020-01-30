@@ -45,7 +45,7 @@ execute(connectionDetails,
         createCohorts = T,
         runValidation = T,
         createValidationTable = T, 
-        causeValidation = T,
+        causeValidation = F,
         packageResults = F,
         minCellCount = 1,
         sampleSize = NULL)
@@ -53,6 +53,9 @@ execute(connectionDetails,
 PatientLevelPrediction::viewMultiplePlp("outputFolder")
 
 
-#For validation result in each TAR condition, you could run the code below 
-TAR <- 30 
-causeValidation(outputFolder, TAR)
+#For validation you could run the code below 
+# TAR is 60 days only
+
+# You should run "causeValidationTable" before run the causeValidation function.
+causeValidationTable(outputFolder, TAR = 60)
+causeValidation(outputFolder, TAR = 60)

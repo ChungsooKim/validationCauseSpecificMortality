@@ -2,10 +2,10 @@
 #' @NAME createValidationTable
 #' @details This function will create the table for validation
 #' @import dplyr 
-#' @import randomForest
 #' @import ROCR
 #' @import pROC
 #' @import caret
+#' @import ParallelLogger
 #'
 #' @param TAR                  Time at risk for determining risk window
 #' @param outputFolder         Name of local folder to place results; make sure to use forward slashes
@@ -13,7 +13,7 @@
 #' @export
 
 
-createValidationTable <- function(outputFolder, TAR) {
+createValidationTable <- function(outputFolder, TAR = 60) {
   
   ### Set save folder directory
   ParallelLogger::logInfo("Setting save folder...")
@@ -113,10 +113,12 @@ createValidationTable <- function(outputFolder, TAR) {
   outDFoutcome <- data.frame()
   for (j in model1) {
     df3 <- outList[[j]] %>% select(subjectId, outcomeCount)
-    colnames(df3)[2]<- paste(paste("Label", settings$outcomeName[j], sep = "_"), settings$modelSettingsId[j], sep = "_")
+    colnames(df3)[2]<- paste(paste("Label", settings$outcomeName[j], sep = "_"),
+                             settings$modelSettingsId[j], sep = "_")
     if (length(outDFoutcome) == 0) {
       outDFoutcome <- outList[[j]] %>% select(subjectId, outcomeCount)
-      colnames(outDFoutcome)[2] <- paste(paste("Label", settings$outcomeName[j], sep = "_"), settings$modelSettingsId[j], sep = "_")
+      colnames(outDFoutcome)[2] <- paste(paste("Label", settings$outcomeName[j], sep = "_"),
+                                         settings$modelSettingsId[j], sep = "_")
     }
     else{
       outDFoutcome <- left_join(outDFoutcome, df3, by = "subjectId")
