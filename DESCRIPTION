@@ -1,0 +1,33 @@
+Package: ValidationCauseSpecificMortality
+Type: Package
+Title: Validation of Cause Specific Mortality package
+Version: 0.0.2
+Date: 2018-08-01
+Author: Chungsoo Kim [aut]
+Maintainer: Chungsoo Kim <ted9219@ajou.ac.kr>
+Description: validation packages of cause specific mortality prediction package
+License: Apache License 2.0
+Encoding: UTF-8
+Depends:
+  R (>= 3.3.0), 
+  DatabaseConnector (>= 1.11.4)
+Imports:
+  FeatureExtraction (>= 2.0.0),
+  SqlRender,
+  Cyclops (>= 1.2.2),
+  PatientLevelPrediction (>= 3.0.0),
+  ggplot2,
+  gridExtra,
+  ff,
+  ffbase (>= 0.12.1),
+  ParallelLogger,
+  OhdsiSharing,
+  dplyr,
+  randomForest,
+  caret,
+  pROC,
+  ROCR
+Suggests:
+  testthat
+NeedsCompilation: no
+RoxygenNote: 6.1.1
