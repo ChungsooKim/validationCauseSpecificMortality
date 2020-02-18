@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1580363595665.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "8F2DFF97",
+    "lastKnownWriteTime" : 1581996362,
+    "last_content_update" : 1581996362,
+    "path" : "~/ted9219/git/ted9219/validationCauseSpecificMortality/extras/CodeToRun.R",
+    "project_path" : "extras/CodeToRun.R",
+    "properties" : {
+        "cursorPosition" : "21,5",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

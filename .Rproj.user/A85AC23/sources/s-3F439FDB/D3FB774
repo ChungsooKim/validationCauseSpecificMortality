@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1580363663342.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "D3FB774",
+    "lastKnownWriteTime" : 1581993164,
+    "last_content_update" : 1581993164078,
+    "path" : "~/ted9219/git/ted9219/validationCauseSpecificMortality/R/createValidationTable.R",
+    "project_path" : "R/createValidationTable.R",
+    "properties" : {
+        "cursorPosition" : "3,17",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1580365158424.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CD8C19D8",
+    "lastKnownWriteTime" : 1580365272,
+    "last_content_update" : 1580365272,
+    "path" : "~/ted9219/git/ted9219/validationCauseSpecificMortality/NAMESPACE",
+    "project_path" : "NAMESPACE",
+    "properties" : {
+        "cursorPosition" : "6,13",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_namespace"
+}
