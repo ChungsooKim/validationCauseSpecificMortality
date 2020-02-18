@@ -4,11 +4,22 @@
 \alias{execute}
 \title{Execute the validation study}
 \usage{
-execute(connectionDetails, databaseName, cdmDatabaseSchema,
-  cohortDatabaseSchema, oracleTempSchema, cohortTable, outputFolder,
-  createCohorts = T, runValidation = T, createValidationTable = T,
-  causeValidation = T, packageResults = T, minCellCount = 5,
-  sampleSize = NULL)
+execute(
+  connectionDetails,
+  databaseName,
+  cdmDatabaseSchema,
+  cohortDatabaseSchema,
+  oracleTempSchema,
+  cohortTable,
+  outputFolder,
+  createCohorts = T,
+  runValidation = T,
+  createValidationTable = T,
+  causeValidation = T,
+  packageResults = T,
+  minCellCount = 5,
+  sampleSize = NULL
+)
 }
 \arguments{
 \item{connectionDetails}{An object of type \code{connectionDetails} as created using the

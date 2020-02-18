@@ -4,7 +4,7 @@
 \alias{createValidationTable}
 \title{Execute the validation study}
 \usage{
-createValidationTable(outputFolder, TAR = 60)
+createValidationTable(outputFolder, TAR)
 }
 \arguments{
 \item{outputFolder}{Name of local folder to place results; make sure to use forward slashes
