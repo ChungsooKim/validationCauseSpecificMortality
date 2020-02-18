@@ -2,6 +2,22 @@ Cause-specific mortality Validation package
 ========================================================
 
 
+<img src="https://img.shields.io/badge/Study%20Status-Design%20Finalized-brightgreen.svg" alt="Study Status: Design Finalized">
+
+- Analytics use case(s): **Patient-Level Prediction**
+- Study type: **Clinical Application**
+- Tags: **-**
+- Study lead: **Chungsoo Kim**, **Seng Chan You**, **Rae Woong Park***
+- Study lead forums tag: **[[Chungsoo_Kim]](https://forums.ohdsi.org/u/Chungsoo_Kim)**, **[[SCYou]](https://forums.ohdsi.org/u/SCYou)**, **[[RWPark]](https://forums.ohdsi.org/u/rwpark)**
+- Study start date: **June 1, 2019**
+- Study end date: **-**
+- Protocol: **-**
+- Publications: **-**
+- Results explorer: **-**
+
+Validation of cause of death predictive model to other databases.
+
+
 Instructions To Build Package
 ===================
 
@@ -58,6 +74,8 @@ execute(connectionDetails,
         outputFolder,
         createCohorts = T,
         runValidation = T,
+        createValidationTable = F,
+        causeValidation = F,
         packageResults = F,
         minCellCount = 1,
         sampleSize = NULL)
@@ -67,16 +85,6 @@ PatientLevelPrediction::viewMultiplePlp("outputFolder")
 
 
 ```
-- For validation of cause prediction model, please run causeValidation function after running createValidationTable function.
-  
-```r
-
-TAR <- c(30,60,90,180,365)
-lapply(TAR, function(x) createValidationTable(outputFolder, TAR = x))
-lapply(TAR, function(y) causeValidation(outputFolder, TAR = y))
-
-```
-
 
 # Development status
 Under development. Do not use

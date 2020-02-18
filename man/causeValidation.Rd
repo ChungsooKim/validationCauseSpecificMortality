@@ -4,7 +4,7 @@
 \alias{causeValidation}
 \title{Execute the validation study}
 \usage{
-causeValidation(outputFolder, TAR)
+causeValidation(outputFolder, TAR = 60)
 }
 \arguments{
 \item{outputFolder}{Name of local folder to place results; make sure to use forward slashes

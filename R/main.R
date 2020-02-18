@@ -26,7 +26,7 @@
 #' @param packageResults       Whether to package the results (after removing sensitive details)
 #' @param minCellCount         The min count for the result to be included in the package results
 #' @param sampleSize           Whether to sample from the target cohort - if desired add the number to sample
-#' @param createValidationTable whether to create validation table for cause prediction 
+#' @param createValidationTable whether to create table for causeValidation
 #' @param causeValidation      whether to run the validation function of causePrediction
 #' @export
 execute <- function(connectionDetails,
@@ -88,15 +88,16 @@ execute <- function(connectionDetails,
   }
   
   if(createValidationTable){
-    TAR <- c(30,60,90,180,365)
-    lapply(TAR, function(x) createValidationTable(outputFolder, TAR = x))
+    TAR <- 60
+    createValidationTable(outputFolder = outputFolder,
+                          TAR = TAR)
   }
   
   if(causeValidation) {
-    TAR <- c(30,60,90,180,365)
-    lapply(TAR, function(y) causeValidation(outputFolder, TAR = y))
+    TAR <- 60
+    causeValidation(outputFolder = outputFolder, 
+                    TAR = TAR)
   }
-
 
   invisible(NULL)
 

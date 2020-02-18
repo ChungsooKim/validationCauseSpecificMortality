@@ -39,7 +39,7 @@ study.}
 
 \item{runValidation}{Whether to run the valdiation models}
 
-\item{createValidationTable}{whether to create validation table for cause prediction}
+\item{createValidationTable}{whether to create table for causeValidation}
 
 \item{causeValidation}{whether to run the validation function of causePrediction}
 
