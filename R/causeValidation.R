@@ -77,7 +77,7 @@ causeValidation <- function(outputFolder, TAR){
   ParallelLogger::logInfo("Calculating accuracy...")
   dfPerformance <- dataTestResult
   
-  lev <- seq(0,labelNum) %>% as.character(lev)
+  lev <- as.character(seq(0,labelNum))
   lev <- c(lev, "99")
   levels(dfPerformance$CauseLabel) <- c(intersect(lev, levels(dfPerformance$CauseLabel)), 
                                         setdiff(lev, levels(dfPerformance$CauseLabel)))
