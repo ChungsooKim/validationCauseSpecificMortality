@@ -1,4 +1,4 @@
-Package: ValidationCauseSpecificMortality
+Package: validationCauseSpecificMortality
 Type: Package
 Title: Validation of Cause Specific Mortality package
 Version: 0.0.2
@@ -23,7 +23,6 @@ Imports:
   ParallelLogger,
   OhdsiSharing,
   dplyr,
-  randomForest,
   caret,
   pROC,
   ROCR
